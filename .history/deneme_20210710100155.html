@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+body {
+          font-family: 'Roboto', sans-serif;
+
+        }
+    header > div {
+        padding: 8px;
+    }
+    header {
+        background-color: rgb(29, 175, 29);
+        color: white;
+        border-radius: 5px 5px 0 0;
+
+    }
+
+    header,
+    .row {
+        display: flex;
+        /* aligns all child elements (flex items) in a row */
+    }
+
+    .col :nth-of-type(odd){
+        background-color:rgb(226, 226, 226) ;
+    }
+    .col :last-child {
+        border-bottom: 2px solid green;
+    }
+
+    .col > div {
+        border-bottom: 1px solid rgb(196, 187, 187);
+        padding: 5px;
+
+    }
+
+   
+    .col {
+        flex: 1;
+        /* distributes space on the line equally among items */
+    }
+</style>
+
+<body>
+
+    <header>
+        <div class="col">Saat</div>
+        <div class="col">Pazartesi</div>
+        <div class="col">Salı</div>
+        <div class="col">Çarşamba</div>
+        <div class="col">Perşembe</div>
+        <div class="col">Cuma</div>
+    </header>
+    <div class="row">
+        <div class="col"><div>10:00</div><div>10:00</div>
+            <div>10:00</div>
+            <div>10:00</div>
+            <div>10:00</div>
+        </div>
+        <div class="col">
+            <div>Matematik</div>
+            <div>Kimya</div>
+            <div>Fizik</div>
+            <div>İngilizce</div>
+            <div>Felsefe</div>
+        </div>
+        <div class="col"><div>Matematik</div><div>Kimya</div>
+            <div>Fizik</div>
+            <div>İngilizce</div>
+            <div>Felsefe</div>
+        </div>
+        <div class="col"><div>Matematik</div>
+            <div>Kimya</div>
+            <div>Fizik</div>
+            <div>İngilizce</div>
+            <div>Felsefe</div>
+        </div>
+        <div class="col"><div>Matematik</div><div>Kimya</div>
+            <div>Fizik</div>
+            <div>İngilizce</div>
+            <div>Felsefe</div>
+        </div>
+        <div class="col"><div>Matematik</div>
+            <div>Kimya</div>
+            <div>Fizik</div>
+            <div>İngilizce</div>
+            <div>Felsefe</div>
+        </div>
+    </div>
+</body>
+
+</html>

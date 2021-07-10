@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>.table {
+        display: flex;
+        flex-flow: column nowrap;
+        font-size: .8rem;
+        margin: 0.5rem;
+        line-height: 1.5;
+        border-bottom: 1px solid #d0d0d0;
+        flex: 1 1 auto;
+      }
+      
+      .th {
+        display: none;
+        font-weight: 700;
+        background-color: #f2f2f2;
+      }
+      
+      .th > .td {
+        white-space: normal;
+        justify-content: center;
+      }
+      
+      .tr {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+      }
+      
+      .tr:nth-of-type(even) {
+        background-color: #f2f2f2;
+      }
+      
+      .tr:nth-of-type(odd) {
+        background-color: #ffffff;
+      }
+      
+      .td {
+        display: flex;
+        flex-flow: row nowrap;
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: 0.5em;
+        word-break: break-word;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        min-width: 0px;
+        white-space: nowrap;
+        border-bottom: 1px solid #d0d0d0;
+      }
+      </style>
+</head>
+
+<body><div class="table">
+    <div class="tr th">
+      <div class="td"
+        style="flex-grow: 2;">
+        Name
+      </div>
+      <div class="td">
+        Items Bought
+      </div>
+      <div class="td">
+        Clicked
+      </div>
+      <div class="td">
+        Duration
+      </div>
+      <div class="td">
+        Lifetime Total
+      </div>
+      <div class="td">
+        Total
+      </div>
+    </div>
+    <div class="tr table-total">
+      <div class="td"
+        style="flex-grow: 2;">
+        <b>Total</b>
+      </div>
+      <div class="td"
+        style="justify-content: center;">
+        <b>4102</b>
+      </div>
+      <div class="td"
+        style="justify-content: center;">
+        <b>2914</b>
+      </div>
+      <div class="td"
+        style="justify-content: center;">
+        <b>1341</b>
+      </div>
+      <div class="td"
+        style="justify-content: flex-end;">
+        <b>$12,118,329.15</b>
+      </div>
+      <div class="td"
+        style="justify-content: flex-end;">
+        <b>$4,036,930.16</b>
+      </div>
+    </div>
+    <div class="tr">
+      <div class="td"
+        style="flex-grow: 2;">
+        <span><a href="javascript:void(0)">Andrew Jackman</a></span>
+      </div>
+      <div class="td"
+        style="justify-content: center;">
+        <span>41</span>
+      </div>
+      <div class="td"
+        style="justify-content: center;">
+        <span>30</span>
+      </div>
+      <div class="td"
+        style="justify-content: center;">
+        <span>27</span>
+      </div>
+      <div class="td"
+        style="justify-content: flex-end;">
+        <span>$176.15</span>
+      </div>
+      <div class="td"
+        style="justify-content: flex-end;">
+        <span>$14.94</span>
+      </div>
+    </div>
+    <div class="tr">
+      <div class="td"
+        style="flex-grow: 2;">
+        <span><a href="javascript:void(0)">Oliver Ogden</a></span>
+      </div>
+      <div class="td"
+        style="justify-content: center;">
+        <span>9</span>
+      </div>
+      <div class="td"
+        style="justify-content: center;">
+        <span>3</span>
+      </div>
+      <div class="td"
+        style="justify-content: center;">
+        <span>1</span>
+      </div>
+      <div class="td"
+        style="justify-content: flex-end;">
+        <span>$29,403.09</span>
+      </div>
+      <div class="td"
+        style="justify-content: flex-end;">
+        <span>$1,385.58</span>
+      </div>
+    </div>
+    <div class="tr">
+      <div class="td"
+        style="flex-grow: 2;">
+        <span><a href="javascript:void(0)">Basil Ullon</a></span>
+      </div>
+      <div class="td"
+        style="justify-content: center;">
+        <span>750</span>
+      </div>
+      <div class="td"
+        style="justify-content: center;">
+        <span>535</span>
+      </div>
+      <div class="td"
+        style="justify-content: center;">
+        <span>707</span>
+      </div>
+      <div class="td"
+        style="justify-content: flex-end;">
+        <span>$795,170.40</span>
+      </div>
+      <div class="td"
+        style="justify-content: flex-end;">
+        <span>$341,946.34</span>
+      </div>
+    </div>
+    <div class="tr">
+      <div class="td"
+        style="flex-grow: 2;">
+        <span><a href="javascript:void(0)">Frank Davis</a></span>
+      </div>
+      <div class="td"
+        style="justify-content: center;">
+        <span>2</span>
+      </div>
+      <div class="td"
+        style="justify-content: center;">
+        <span>1</span>
+      </div>
+      <div class="td"
+        style="justify-content: center;">
+        <span>0</span>
+      </div>
+      <div class="td"
+        style="justify-content: flex-end;">
+        <span>$65.10</span>
+      </div>
+      <div class="td"
+        style="justify-content: flex-end;">
+        <span>$41.12</span>
+      </div>
+    </div>
+    <div class="tr">
+      <div class="td"
+        style="flex-grow: 2;">
+        <span><a href="javascript:void(0)">Edward Ellis</a></span>
+      </div>
+      <div class="td"
+        style="justify-content: center;">
+        <span>80</span>
+      </div>
+      <div class="td"
+        style="justify-content: center;">
+        <span>27</span>
+      </div>
+      <div class="td"
+        style="justify-content: center;">
+        <span>17</span>
+      </div>
+      <div class="td"
+        style="justify-content: flex-end;">
+        <span>$685,372.01</span>
+      </div>
+      <div class="td"
+        style="justify-content: flex-end;">
+        <span>$40,422.95</span>
+      </div>
+    </div>
+    <div class="tr">
+      <div class="td"
+        style="flex-grow: 2;">
+        <span><a href="javascript:void(0)">Keyrene Byrne</a></span>
+      </div>
+      <div class="td"
+        style="justify-content: center;">
+        <span>295</span>
+      </div>
+      <div class="td"
+        style="justify-content: center;">
+        <span>211</span>
+      </div>
+      <div class="td"
+        style="justify-content: center;">
+        <span>369</span>
+      </div>
+      <div class="td"
+        style="justify-content: flex-end;">
+        <span>$1,844,327.00</span>
+      </div>
+      <div class="td"
+        style="justify-content: flex-end;">
+        <span>$472,188.44</span>
+      </div>
+    </div>
+  </div>
+  </body>
+
+</html>

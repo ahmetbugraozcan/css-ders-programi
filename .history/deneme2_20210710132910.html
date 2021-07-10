@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+
+        #container {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-color: lightgrey;
+            padding: 10px;
+
+        }
+
+
+        .shelf {
+
+            flex: 1 1 auto;
+            width: 100%;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            background-color: lightgreen;
+
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .shelf:last-child {
+            margin-bottom: 0;
+        }
+
+
+        .labelbox {
+            flex: 0 0 35%;
+        }
+
+
+        .valuebox {
+            flex: 0 0 65%;
+        }
+    </style>
+</head>
+
+<body><div id="container">
+
+    <div class="shelf">
+        <div class="labelbox">Name: </div> <div class="valuebox">Barry Carter</div>
+    </div>
+
+    <div class="shelf">
+        <div class="labelbox">DOB:</div><div class="valuebox">10/12/1980</div>
+    </div>
+
+    <div class="shelf">
+
+        <div class="labelbox">
+            Description:
+        </div>
+
+        <div class="valuebox">
+
+            This content goes on and on and will force the height to expand. And the label box to the left will
+            "move" with it. There need not be much of a relation other than that their parent div/flex-container is
+            getting taller as well.
+
+        </div>
+
+    </div>
+
+    <div class="shelf">
+        <div class="labelbox">Group:</div><div class="valuebox">Advanced</div>
+    </div>
+
+    <div class="shelf">
+        <div class="labelbox">End Date:</div><div class="valuebox">2020-09-20</div>
+    </div>
+
+</div></body>
+
+</html>
