@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        /*
+        .row>div>div{
+            height: auto;
+            overflow: hidden;
+        }*/
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+
+        }
+
+
+
+        .head {
+            color: white;
+            font-weight: bold;
+        }
+
+        .row {
+            min-width: 1000px;
+            margin: 25px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.44);
+            border-radius: 8px 8px 0 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .content
+        {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .row>div {
+            width: 100%;
+        }
+
+        /* .row>div>div {
+            
+            border-bottom: 1px solid #F67280;
+        } */
+        .row>div>div:nth-of-type(even) {
+            background-color: rgb(252, 250, 250);
+        }
+
+        .row>div>div:last-of-type {
+            border-bottom: 3px solid #F67280;
+        }
+
+        .row>div>div:first-of-type {
+            border-bottom: none;
+        }
+
+
+        .row>div>div,
+        .head {
+            padding: 18px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div>
+            <div class="head" style="background-color: #facab7; "> Saat</div>
+            <div style="font-weight: bold; color: #355C7D;">10:00</div>
+            <div style="font-weight: bold;color: #355C7D;">11:00</div>
+            <div style="font-weight: bold;color: #355C7D;">12:00</div>
+            <div style="font-weight: bold;color: #355C7D;">14:00</div>
+            <div style="font-weight: bold;color: #355C7D;">15:00</div>
+            <div style="font-weight: bold;color: #355C7D;">16:00</div>
+        </div>
+        <div>
+            <div class="head" style="background-color: #F8B195;"> Pazartesi</div>
+            <div class="content" title="Matematik">Matematik</div>
+            <div class="content" title="Fizik">Fizik</div>
+            <div class="content" title="Türkçe">Türkçe</div>
+            <div class="content" title="İngilizce">İngilizce</div>
+            <div class="content" title="Beden Eğitimi">Beden Eğitimi</div>
+            <div class="content" title="Din Bilgisi">Din Bilgisi</div>
+        </div>
+        <div>
+            <div class="head" style="background-color: #F67280;">Salı</div>
+            <div class="content" title="Fizik">Fizik</div>
+            <div class="content" title="Türkçe">Türkçe</div>
+            <div class="content" title="Din Bilgisi">Din Bilgisi</div>
+            <div class="content" title="Felsefe">Felsefe</div>
+            <div class="content" title="İngilizce">İngilizce</div>
+            <div class="content" title="Matematik">Matematik</div>
+        </div>
+        <div>
+            <div class="head" style="background-color: #C06C84;">Çarşamba</div>
+            <div class="content" title="Türkçe">Türkçe</div>
+            <div class="content" title="İngilizce">İngilizce</div>
+            <div class="content" title="Matematik">Matematik</div>
+            <div class="content" title="Felsefe">Felsefe</div>
+            <div class="content" title="Kimya">Kimya</div>
+            <div class="content" title="Biyoloji">Biyoloji</div>
+
+        </div>
+        <div>
+            <div class="head" style="background-color: #6C5B7B;">Perşembe</div>
+            <div class="content" title="Felsefe">Felsefe</div>
+            <div class="content" title="Fizik">Fizik</div>
+            <div class="content" title="İngilizce">İngilizce</div>
+            <div class="content" title="Biyoloji">Biyoloji</div>
+            <div class="content" title="Beden Eğitimi">Beden Eğitimi</div>
+            <div class="content" title="Matematik">Matematik</div>
+        </div>
+        <div>
+            <div class="head" style="background-color: #355C7D;">Cuma</div>
+            <div class="content" title="Beden Eğitimi">Beden Eğitimi</div>
+            <div class="content" title="Türkçe">Türkçe</div>
+            <div class="content" title="Fizik">Fizik</div>
+            <div class="content" title="Kimya">Kimya</div>
+            <div class="content" title="Felsefe">Felsefe</div>
+            <div class="content" title="Matematik">Matematik</div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
